@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import Gallery from "./comp/Gallery";
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+      <Gallery
+       img="./image/basketball.png"
+       name="Gallery101"
+       price='$150'/>
+       <Gallery
+       img="./image/football.png"
+       name="Gallery102"
+       price='$120'/>
+       <Gallery
+       img="./image/soccer.png"
+       name="Gallery103"
+       price='$90'/>
+       <Gallery
+       img="./image/table-tennis.png"
+       name="Gallery104"
+       price='$110'/>
+       <Gallery
+       img="./image/tennis.png"
+       name="Gallery105"
+       price='$80'/>
+   </div>
   );
 }
 
